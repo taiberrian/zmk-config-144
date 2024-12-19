@@ -1,0 +1,115 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/rgb.h>
+
+
+/ {
+
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+			// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+			// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+			// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+			//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+			bindings = <
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+			>;
+
+			          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};		default_layer_2 {
+			// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+			// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+			// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+			//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+			bindings = <
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+			>;
+
+			          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};		default_layer_3 {
+			// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+			// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+			// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+			//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+			bindings = <
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+			>;
+
+			          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};		default_layer_4 {
+			// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+			// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+			// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+			//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+			bindings = <
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+			>;
+
+			          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};		default_layer_5 {
+			// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+			// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+			// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+			//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+			bindings = <
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+				&kp A    &kp A    &kp A    &kp A     &kp A     &kp A      &kp A        &kp A   &kp A     &kp A     &kp A     &kp A     &kp A &kp A &kp A     &kp A     &kp A     &kp A &kp A 
+			>;
+
+			          sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+	};
+};
