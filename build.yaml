@@ -2,5 +2,4 @@
 include:
   - board:  144
     snippet: studio-rpc-usb-uart
-    snippet: nice_view
-
+    shield: nive_view
