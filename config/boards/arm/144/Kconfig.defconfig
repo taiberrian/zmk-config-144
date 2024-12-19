@@ -1,0 +1,26 @@
+# 144 board configuration
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_144
+
+config ZMK_KEYBOARD_NAME
+		default "mega planck"
+
+config BOARD
+    default "144"
+
+config GPIO_595
+    default y
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+endif 
+
+config BT_CTLR
+    default BT
+
+endif
