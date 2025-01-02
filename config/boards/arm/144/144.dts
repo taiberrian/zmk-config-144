@@ -318,48 +318,48 @@ nice_view_spi: &spi0 {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
         b-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
-        steps = <15>;
+        steps = <120>;
         status = "okay";
     };
     encoder1: encoder1 {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
         b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
-        steps = <15>;
+        steps = <120>;
         status = "okay";
     };
     encoder2: encoder2 {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
         b-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
-        steps = <15>;
+        steps = <120>;
         status = "okay";
     };
     encoder3: encoder3 {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH |GPIO_OPEN_DRAIN)>;
         b-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH |GPIO_OPEN_DRAIN)>;
-        steps = <15>;
+        steps = <120>;
         status = "okay";
     };
     encoder4: encoder4 {
         compatible = "alps,ec11";
         a-gpios = <&gpio1 9 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN )>;
         b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN )>;
-        steps = <15>;
+        steps = <120>;
         status = "okay";
     };
     // encoder5: encoder5 {
     //     compatible = "alps,ec11";
     //     a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN )>;
     //     b-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH |GPIO_OPEN_DRAIN )>;
-    //     steps = <15>;
+    //     steps = <120>;
     //     status = "okay";
     // };
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder0 &encoder1 &encoder2 &encoder3 &encoder4 &encoder5>;
-        triggers-per-rotation = <80>;
+        triggers-per-rotation = <60>;
     };
 };
 
