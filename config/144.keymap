@@ -36,16 +36,16 @@
             //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
 
             bindings = <
-&kp A  &kp A  &kp A  &to 2   &none   &to 0  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &to 5   &to 4   &to 3  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &to 8   &to 7   &to 6  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &to 11  &to 10  &to 9  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &to 2   &none   &to 0  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp BACKSPACE  &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &to 5   &to 4   &to 3  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &to 8   &to 7   &to 6  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &to 11  &to 10  &to 9  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A          &kp A  &kp A  &kp A
 &kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A                       &kp A  &kp A  &kp A
+&kp A  &kp A  &kp A  &kp A   &kp A   &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A                               &kp A  &kp A  &kp A
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
