@@ -1,5 +1,5 @@
 ---
 include:
   - board:  144
-    snippet: studio-rpc-usb-uart
+    snippet: studio-rpc-usb-uart zmk-usb-logging
     shield: nice_view
