@@ -23,7 +23,7 @@
 &kp LG(Q)          &kp UP_ARROW       &kp SLASH         &kp PERIOD         &kp COMMA      &kp M         &kp N             &kp B             &kp KP_PLUS       &kp KP_NUMBER_3   &kp KP_NUMBER_2   &kp KP_NUMBER_1  &kp V           &kp C             &kp X             &kp Z         &none             &kp LEFT_SHIFT
 &kp RIGHT_ARROW    &kp DOWN_ARROW     &kp LEFT_ARROW    &kp RIGHT_CONTROL  &kp RIGHT_ALT  &none         &kp SPACE         &none             &kp KP_ENTER      &kp KP_DOT        &kp KP_NUMBER_0   &kp KP_NUMBER_0  &kp SPACE       &kp LC(Y)         &kp LC(Z)         &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_CONTROL
 &kp D              &kp A              &kp E             &kp B              &kp C          &kp NUMBER_9  &kp NUMBER_6      &kp NUMBER_0      &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_1      &kp NUMBER_2     &kp NUMBER_5    &kp NUMBER_3      &kp NUMBER_4
-&kp R              &kp T              &kp N6            &kp N7             &kp N8         &kp N9        &kp N0            &kp A             &kp N2            &kp N3            &kp N4            &kp N5                                                               &kp Q         &kp W             &kp E
+&kp R              &kp T              &kp N6            &kp N7             &kp N8         &kp N9        &kp N0            &kp NUMBER_1      &kp N2            &kp N3            &kp N4            &kp N5                                                               &kp Q         &kp W             &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
