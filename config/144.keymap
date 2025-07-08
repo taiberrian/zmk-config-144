@@ -36,7 +36,7 @@
             //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
 
             bindings = <
-&kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A      &kp A      &kp A  &kp A  &bootloader
+&kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A      &kp A      &kp A  &kp A  &none
 &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A      &kp A      &kp A  &kp A  &kp A
 &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A      &kp A      &kp A  &kp A  &kp A
 &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A  &kp A      &kp A      &kp A  &kp A  &kp A
